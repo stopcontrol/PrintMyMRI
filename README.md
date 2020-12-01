@@ -36,7 +36,9 @@ After installation and licensing we can start the fully automated segmentation a
 
 Now you can [Test](https://surfer.nmr.mgh.harvard.edu/fswiki/TestingFreeSurfer) your installation by processing a FS sample subject called "Bert" if you want to.
 
-## Segmentatios and reconstruction command: ```recon -all```
+
+### Segmentation and reconstruction command: ```recon -all```
+
 
 Open your Terminal and navigate to your Subject Folder. Assuming the MRI is in your Downlaods Folder:
 
@@ -57,7 +59,20 @@ where -i file.dcm is your Scan (here in dcm File format; also works with .nii; .
 
 And now be patient....
 
-FS Troubleshooting: 
+### View Segmentation and Reconstruction
+
+Open Freeview from your File System or call it directly from Terminal
+
+```bash
+open /Applications/freesurfer/7.1.1/Freeview.app
+```
+
+Use to File/Load Surface/ and navigate to the "surf" subdirectory in your subject folder and call for instance the file rh.pial to view the surface reconstruction of your right hemisphere and happily watch your cortex.
+
+To View the Segmentation itself open the Volume with File/Load Volume/ and click the aseq.mgz file in the mri subdirectory of your subject's folder.
+
+
+### FS Troubleshooting: 
 Problems with exporting Freesurfers Home Directory? The way you're supposed to do it is stated wrong in the FS-Wiki. Using the current version you may have to change export from 
 
 ```bash
@@ -90,3 +105,4 @@ MNI_DIR         /usr/local/freesurfer/mni
 
 Licensing:
 Now it's time to [license](https://surfer.nmr.mgh.harvard.edu/registration.html) your FS copy for free. You'll receive a file called license.txt via email. Put that file into the /Applications/freesurfer directory.
+
