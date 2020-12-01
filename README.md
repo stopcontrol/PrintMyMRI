@@ -50,13 +50,15 @@ recon-all –i file.dcm –subject  bert   –all
 ```
 
 where -i file.dcm is your Scan (here in dcm File format; also works with .nii; .nii.gz as well as others I guess)
--subject (-s) stands for the sample subject "bert"; this will be your output fodler anme for that brain
+
+-subject (-s) stands for the sample subject "bert"; this will be your output folder name for that brain.
+
 -all means do everything you can do (takes up a lot of computation time)
 
-And now be patient.
+And now be patient....
 
 FS Troubleshooting: 
-Problems with exporting Freeesurfers Home Directory? The way you d it is stated wrong in the FS-Wiki. Using the current version you may have to change export from 
+Problems with exporting Freesurfers Home Directory? The way you're supposed to do it is stated wrong in the FS-Wiki. Using the current version you may have to change export from 
 
 ```bash
 export FREESURFER_HOME=/Applications/freesurfer
