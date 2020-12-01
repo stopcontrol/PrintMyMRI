@@ -32,7 +32,7 @@ The very first part in order to get a 3D Model of the brain is to strip the skul
 
 [Install, source, export](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall5.3) and [license](https://surfer.nmr.mgh.harvard.edu/registration.html) (free!) Freesurfer. Find a Mac installation Demo [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall?action=AttachFile&do=get&target=installFS_demo.mp4).
 
-After installation and licensing we can start the fully automated segmentation and reconstruction process which can take about 6 to 24 hours depending on your Machine and parallelisation Settings.
+After installation and licensing we can start the fully automated segmentation and reconstruction process which can take up to about 24 hours depending on your Machine and parallelisation Settings.
 
 Now you can [Test](https://surfer.nmr.mgh.harvard.edu/fswiki/TestingFreeSurfer) your installation by processing a FS samplesubject called "Bert"; if you want to.
 
