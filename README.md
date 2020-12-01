@@ -69,10 +69,19 @@ open /Applications/freesurfer/7.1.1/Freeview.app
 
 Use to File/Load Surface/ and navigate to the "surf" subdirectory in your subject folder and call for instance the file rh.pial to view the surface reconstruction of your right hemisphere and happily watch your cortex.
 
-[](/screenshots/ss_surf.png)
+<br>
+
+![](https://github.com/stopcontrol/PrintMyMRI/blob/main/screenshots/ss_surf.png)
+
+<br>
 
 To View the Segmentation itself open the Volume with File/Load Volume/ and click the aseq.mgz file in the mri subdirectory of your subject's folder.
 
+<br>
+
+![](https://github.com/stopcontrol/PrintMyMRI/blob/main/screenshots/ss_segmet.png)
+
+<br>
 
 ### FS Troubleshooting: 
 Problems with exporting Freesurfers Home Directory? The way you're supposed to do it is stated wrong in the FS-Wiki. Using the current version you may have to change export from 
@@ -107,4 +116,15 @@ MNI_DIR         /usr/local/freesurfer/mni
 
 Licensing:
 Now it's time to [license](https://surfer.nmr.mgh.harvard.edu/registration.html) your FS copy for free. You'll receive a file called license.txt via email. Put that file into the /Applications/freesurfer directory.
+
+<br>
+
+<br>
+
+# Combine muliple surfaces using FSL
+
+In this example we're at first going to combine left- and right hemisphere with the cerebellum as well as with the brain stem and then we'll try to dig into surface reconstruction of subcortical structures.
+
+# TBA
+
 
