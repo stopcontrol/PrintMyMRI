@@ -28,7 +28,7 @@ This works for any collection of segmented Regions and helps to combound them to
 
 # Segmentation and surface reconstruction
 
-The very first part in order to get a 3D Model of the brain is to strip the skull and all other "non-brain" from your Scan using Fressurfer
+The very first part in order to get a 3D Model of the brain is to strip the skull and all other "non-brain" tissue from your Scan using Fressurfer
 
 [Install, source, export](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall5.3) and [license](https://surfer.nmr.mgh.harvard.edu/registration.html) (free!) Freesurfer. Find a Mac installation Demo [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall?action=AttachFile&do=get&target=installFS_demo.mp4).
 
