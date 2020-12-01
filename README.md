@@ -69,6 +69,8 @@ open /Applications/freesurfer/7.1.1/Freeview.app
 
 Use to File/Load Surface/ and navigate to the "surf" subdirectory in your subject folder and call for instance the file rh.pial to view the surface reconstruction of your right hemisphere and happily watch your cortex.
 
+[](/screenshots/ss_surf.png)
+
 To View the Segmentation itself open the Volume with File/Load Volume/ and click the aseq.mgz file in the mri subdirectory of your subject's folder.
 
 
