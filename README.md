@@ -34,16 +34,16 @@ The very first part in order to get a 3D Model of the brain is to strip the skul
 
 After installation and licensing we can start the fully automated segmentation and reconstruction process which can take up to about 24 hours depending on your Machine and parallelisation Settings.
 
-Now you can [Test](https://surfer.nmr.mgh.harvard.edu/fswiki/TestingFreeSurfer) your installation by processing a FS samplesubject called "Bert"; if you want to.
+Now you can [Test](https://surfer.nmr.mgh.harvard.edu/fswiki/TestingFreeSurfer) your installation by processing a FS sample subject called "Bert" if you want to.
 
-Segemntations and reconstruction: recon -all
+## Segmentatios and reconstruction command: ```recon -all```
 
 Open your Terminal and navigate to your Subject Folder. Assuming the MRI is in your Downlaods Folder:
 
 ```bash
 cd ~/Downloads/subject
 ```
-And start the processby calling teh recon-all function
+And start the process by calling the recon-all function mentioned above.
 
 ```bash
 recon-all –i file.dcm –subject  bert   –all
