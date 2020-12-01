@@ -28,9 +28,34 @@ This works for any collection of segmented Regions and helps to combound them to
 
 # Segmentation and surface reconstruction
 
+The very first part in order to get a 3D Model of the brain is to strip the skull and all other "non-brain" from your Scan using Fressurfer
+
 [Install, source, export](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall5.3) and [license](https://surfer.nmr.mgh.harvard.edu/registration.html) (free!) Freesurfer. Find a Mac installation Demo [here](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall?action=AttachFile&do=get&target=installFS_demo.mp4).
 
-Troubleshooting: 
+After installation and licensing we can start the fully automated segmentation and reconstruction process which can take about 6 to 24 hours depending on your Machine and parallelisation Settings.
+
+Now you can [Test](https://surfer.nmr.mgh.harvard.edu/fswiki/TestingFreeSurfer) your installation by processing a FS samplesubject called "Bert"; if you want to.
+
+Segemntations and reconstruction: recon -all
+
+Open your Terminal and navigate to your Subject Folder. Assuming the MRI is in your Downlaods Folder:
+
+```bash
+cd ~/Downloads/subject
+```
+And start the processby calling teh recon-all function
+
+```bash
+recon-all –i file.dcm –subject  bert   –all
+```
+
+where -i file.dcm is your Scan (here in dcm File format; also works with .nii; .nii.gz as well as others I guess)
+-subject (-s) stands for the sample subject "bert"; this will be your output fodler anme for that brain
+-all means do everything you can do (takes up a lot of computation time)
+
+And now be patient.
+
+FS Troubleshooting: 
 Problems with exporting Freeesurfers Home Directory? The way you d it is stated wrong in the FS-Wiki. Using the current version you may have to change export from 
 
 ```bash
@@ -61,4 +86,5 @@ SUBJECTS_DIR    /usr/local/freesurfer/subjects
 MNI_DIR         /usr/local/freesurfer/mni
 ```
 
-Now it's time to [license](https://surfer.nmr.mgh.harvard.edu/registration.html) your FS copy for free.
+Licensing:
+Now it's time to [license](https://surfer.nmr.mgh.harvard.edu/registration.html) your FS copy for free. You'll receive a file called license.txt via email. Put that file into the /Applications/freesurfer directory.
